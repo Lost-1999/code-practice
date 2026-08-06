@@ -1,6 +1,5 @@
 bool isPalindrome(char* s) {
     char *slow = s;
-    int len = 0;
     for(char *fast = s;*fast != '\0';fast++){
         if('a' <= *fast && *fast <= 'z'){
             *slow++ = *fast;
