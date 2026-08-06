@@ -1,11 +1,9 @@
 int removeDuplicates(int* nums, int numsSize) {
-    int *first = nums;
-    int *second = nums + 1;
-    while(second < nums+numsSize){
-        if(*second != *first){
-            *++first = *second;
+    int *slow = nums;
+    for(int *fast = nums+1;fast < nums+numsSize;fast++){
+        if(*fast != *slow){
+            *++slow = *fast;
         }
-        second++;
     }
-    return (int)(first - nums + 1);
+    return (int)(slow - nums + 1);
 }
