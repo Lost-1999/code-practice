@@ -1,15 +1,12 @@
 void moveZeroes(int* nums, int numsSize) {
-    int numof0 = 0;
     int *slow = nums;
+    int *end = nums+numsSize;
     for(int *fast = nums;fast < nums+numsSize;fast++){
-        if(*fast == 0){
-            numof0++;
-        }
-        else{
+        if(*fast != 0){
             *slow++ = *fast;
         }
     }
-    while(numof0--){
+    while(slow < end){
         *slow++ = 0;
     }
 }
