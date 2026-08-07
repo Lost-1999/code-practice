@@ -28,8 +28,8 @@ int myLinkedListGet(MyLinkedList* obj, int index) {
 
 void myLinkedListAddAtIndex(MyLinkedList* obj, int index, int val) {
     Node *p = obj->head;
-    Node *q = malloc(sizeof(*q));
     if(index < 0 || index > obj->size)return;
+    Node *q = malloc(sizeof(*q));
     for(int i=0;i<index;i++){
         p = p->next;
     }
@@ -66,6 +66,7 @@ void myLinkedListFree(MyLinkedList* obj) {
         free(p);
         p = q;
     }
+    free(obj);
 }
 
 /**
