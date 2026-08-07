@@ -22,4 +22,12 @@ leetcode练习
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Lost-1999/code-practice/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Lost-1999/code-practice/tree/master/0027-remove-element) |
 | [0283-move-zeroes](https://github.com/Lost-1999/code-practice/tree/master/0283-move-zeroes) |
+## Linked List
+|  |
+| ------- |
+| [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
+## Design
+|  |
+| ------- |
+| [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
 <!---LeetCode Topics End-->
