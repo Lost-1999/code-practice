@@ -6,6 +6,7 @@ typedef struct Node{
 
 typedef struct {
     Node *head;
+    Node *tail;
     int size;
 } MyLinkedList;
 
@@ -13,7 +14,11 @@ typedef struct {
 MyLinkedList* myLinkedListCreate() {
     MyLinkedList *list = malloc(sizeof(*list));
     list->head = malloc(sizeof(*list->head));
-    list->head->next = NULL;
+    list->tail = malloc(sizeof(*list->tail));
+    list->head->next = list->tail;
+    list->tail->prev = list->head;
+    list->head->prev = NULL;
+    list->tail->next = NULL;
     list->size = 0;
     return list;
 }
@@ -28,19 +33,28 @@ int myLinkedListGet(MyLinkedList* obj, int index) {
 }
 
 void myLinkedListAddAtIndex(MyLinkedList* obj, int index, int val) {
-    Node *p = obj->head;
     if(index < 0 || index > obj->size)return;
-    Node *q = malloc(sizeof(*q));
-    for(int i=0;i<index;i++){
-        p = p->next;
+    Node *pred,*succ;
+    if(index <= obj->size/2){
+        pred = obj->head;
+        for(int i=0;i<index;i++){
+            pred = pred->next;
+        }
+        succ = pred->next;
     }
-    q->val = val;
-    q->next = p->next;
-    if(p->next != NULL){
-        p->next->prev = q;
+    else{
+        succ = obj->tail;
+        for(int i=0;i<obj->size-index;i++){
+            succ = succ->prev;
+        }
+        pred = succ->prev;
     }
-    p->next = q;
-    q->prev = p;
+    Node *p = malloc(sizeof(*p));
+    p->val = val;
+    p->next = succ;
+    p->prev = pred;
+    pred->next = p;
+    succ->prev = p;
     obj->size++;
 }
 
@@ -53,17 +67,23 @@ void myLinkedListAddAtTail(MyLinkedList* obj, int val) {
 }
 
 void myLinkedListDeleteAtIndex(MyLinkedList* obj, int index) {
-    Node *p = obj->head;
+    Node *q;
     if(index < 0 || index >= obj->size)return;
-    for(int i=0;i<index;i++){
-        p = p->next;
+    if(index <= obj->size/2){
+        q = obj->head->next;
+        for(int i=0;i<index;i++){
+            q = q->next;
+        };
     }
-    Node *q = p->next;
-    if(q->next != NULL){
-        q->next->prev = p;
+    else{
+        q = obj->tail->prev;
+        for(int i=0;i<obj->size-1-index;i++){
+            q = q->prev;
+        }
     }
-    p->next = q->next;
-    free(q);
+    q->prev->next = q->next;
+    q->next->prev = q->prev;
+    free(q); 
     obj->size--;
 }
 
