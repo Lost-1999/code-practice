@@ -1,11 +1,13 @@
 typedef struct{
     int top;
+    int capacity;
     char *arr;
 }Stack;
-Stack* Create(){
+Stack* Create(int maxsize){
     Stack *s;
     s = malloc(sizeof(*s));
-    s->arr = malloc(sizeof(char)*10000);
+    s->arr = malloc(sizeof(char)*maxsize);
+    s->capacity = maxsize;
     s->top = -1;
     return s;
 }
@@ -18,31 +20,38 @@ void push(Stack *s,char c){
 void pop(Stack *s){
     s->top--;
 }
+char top(Stack *s){
+    return s->arr[s->top];
+}
+void Dispose(Stack *s){
+    free(s->arr);
+    free(s);
+}
 bool isValid(char* s) {
-    Stack* stack = Create();
+    Stack* stack = Create(strlen(s));
     while(*s != '\0'){
         if(*s == '(' || *s == '[' || *s == '{'){
             push(stack,*s);
         }
         else if(*s == ')' || *s == ']' || *s == '}'){
-            if(IsEmpty(stack))return false;
+            if(IsEmpty(stack)){
+                Dispose(stack);
+                return false;
+            }
+            char c = top(stack);
+            if(*s == ')' && c == '(' ||
+               *s == ']' && c == '[' ||
+               *s == '}' && c == '{'){
+                pop(stack);
+            }
             else{
-                if(*s == ')'){
-                    if(stack->arr[stack->top] != '(')return false;
-                    else pop(stack);
-                }
-                if(*s == ']'){
-                    if(stack->arr[stack->top] != '[')return false;
-                    else pop(stack);
-                }
-                if(*s == '}'){
-                    if(stack->arr[stack->top] != '{')return false;
-                    else pop(stack);
-                }
+                Dispose(stack);
+                return false;
             }
         }
         s++;
     }
-    if(!IsEmpty(stack))return false;
-    else return true;
+    bool result = IsEmpty(stack);
+    Dispose(stack);
+    return result;
 }
