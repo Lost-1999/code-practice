@@ -15,6 +15,7 @@ leetcode练习
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/Lost-1999/code-practice/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/Lost-1999/code-practice/tree/master/0344-reverse-string) |
 ## Array
@@ -32,4 +33,12 @@ leetcode练习
 |  |
 | ------- |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
