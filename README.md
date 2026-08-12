@@ -11,6 +11,7 @@ leetcode练习
 | [0125-valid-palindrome](https://github.com/Lost-1999/code-practice/tree/master/0125-valid-palindrome) |
 | [0283-move-zeroes](https://github.com/Lost-1999/code-practice/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Lost-1999/code-practice/tree/master/0344-reverse-string) |
+| [0876-middle-of-the-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0876-middle-of-the-linked-list) |
 ## String
 |  |
 | ------- |
@@ -26,6 +27,7 @@ leetcode练习
 |  |
 | ------- |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
+| [0876-middle-of-the-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0876-middle-of-the-linked-list) |
 ## Design
 |  |
 | ------- |
