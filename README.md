@@ -32,11 +32,13 @@ leetcode练习
 ## Design
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/Lost-1999/code-practice/tree/master/0155-min-stack) |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
 ## Stack
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/Lost-1999/code-practice/tree/master/0155-min-stack) |
 ## Bracket Sequences
 |  |
 | ------- |
