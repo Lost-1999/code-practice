@@ -24,15 +24,18 @@ leetcode练习
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Lost-1999/code-practice/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Lost-1999/code-practice/tree/master/0027-remove-element) |
 | [0283-move-zeroes](https://github.com/Lost-1999/code-practice/tree/master/0283-move-zeroes) |
+| [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 ## Linked List
 |  |
 | ------- |
+| [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0876-middle-of-the-linked-list) |
 ## Design
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Lost-1999/code-practice/tree/master/0155-min-stack) |
+| [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
 ## Stack
 |  |
@@ -43,4 +46,8 @@ leetcode练习
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
+## Queue
+|  |
+| ------- |
+| [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 <!---LeetCode Topics End-->
