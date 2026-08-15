@@ -14,7 +14,7 @@ MyCircularQueue* myCircularQueueCreate(int k) {
     MyCircularQueue* q = malloc(sizeof(*q));
     q->capacity = k;
     q->size = 0;
-    q->rear = 0;
+    q->rear = -1;
     q->front = 0;
     q->arr = malloc(sizeof(int)*k);
     return q; 
@@ -32,8 +32,8 @@ bool myCircularQueueEnQueue(MyCircularQueue* obj, int value) {
     if(myCircularQueueIsFull(obj)){
         return false;
     }
-    obj->arr[obj->rear] = value;  
     obj->rear = (obj->rear+1) % obj->capacity;
+    obj->arr[obj->rear] = value;
     obj->size++;
     return true;
 }
@@ -58,7 +58,7 @@ int myCircularQueueRear(MyCircularQueue* obj) {
     if(myCircularQueueIsEmpty(obj)){
         return -1;
     }
-    return obj->arr[(obj->rear-1+obj->capacity)%obj->capacity];
+    return obj->arr[obj->rear];
 }
 
 void myCircularQueueFree(MyCircularQueue* obj) {
