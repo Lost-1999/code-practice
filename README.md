@@ -35,6 +35,7 @@ leetcode练习
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Lost-1999/code-practice/tree/master/0155-min-stack) |
+| [0232-implement-queue-using-stacks](https://github.com/Lost-1999/code-practice/tree/master/0232-implement-queue-using-stacks) |
 | [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 | [0707-design-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0707-design-linked-list) |
 ## Stack
@@ -42,6 +43,7 @@ leetcode练习
 | ------- |
 | [0020-valid-parentheses](https://github.com/Lost-1999/code-practice/tree/master/0020-valid-parentheses) |
 | [0155-min-stack](https://github.com/Lost-1999/code-practice/tree/master/0155-min-stack) |
+| [0232-implement-queue-using-stacks](https://github.com/Lost-1999/code-practice/tree/master/0232-implement-queue-using-stacks) |
 ## Bracket Sequences
 |  |
 | ------- |
@@ -49,5 +51,6 @@ leetcode练习
 ## Queue
 |  |
 | ------- |
+| [0232-implement-queue-using-stacks](https://github.com/Lost-1999/code-practice/tree/master/0232-implement-queue-using-stacks) |
 | [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
 <!---LeetCode Topics End-->
