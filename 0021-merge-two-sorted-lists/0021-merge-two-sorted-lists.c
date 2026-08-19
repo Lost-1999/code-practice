@@ -6,14 +6,20 @@
  * };
  */
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
-    if(!list1)return list2;
-    if(!list2)return list1;
-    if(list1->val <= list2->val){
-        list1->next = mergeTwoLists(list1->next,list2);
-        return list1;
+    struct ListNode dummy;
+    dummy.next = NULL;
+    struct ListNode *p = &dummy;
+    while(list1 && list2){
+        if(list1->val <= list2->val){
+            p->next = list1;
+            list1 = list1->next;
+        }
+        else{
+            p->next = list2;
+            list2 = list2->next;
+        }
+        p = p->next;
     }
-    else{
-        list2->next = mergeTwoLists(list1,list2->next);
-        return list2;
-    }
+    p->next = list1 ? list1 : list2;
+    return dummy.next;
 }
