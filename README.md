@@ -67,6 +67,7 @@ leetcode练习
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/Lost-1999/code-practice/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Lost-1999/code-practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0700-search-in-a-binary-search-tree](https://github.com/Lost-1999/code-practice/tree/master/0700-search-in-a-binary-search-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -81,6 +82,7 @@ leetcode练习
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/Lost-1999/code-practice/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Lost-1999/code-practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0700-search-in-a-binary-search-tree](https://github.com/Lost-1999/code-practice/tree/master/0700-search-in-a-binary-search-tree) |
 ## Hash Table
 |  |
 | ------- |
@@ -89,4 +91,8 @@ leetcode练习
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/Lost-1999/code-practice/tree/master/0141-linked-list-cycle) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0700-search-in-a-binary-search-tree](https://github.com/Lost-1999/code-practice/tree/master/0700-search-in-a-binary-search-tree) |
 <!---LeetCode Topics End-->
