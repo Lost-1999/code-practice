@@ -38,7 +38,7 @@ int kthLargestAdd(KthLargest* obj, int val) {
         PercolateUp(obj->size,obj);
     }
     else{
-        if(obj->heap[1] <= val){
+        if(obj->heap[1] < val){
             obj->heap[1] = val;
             PercolateDown(1,obj);
         }
