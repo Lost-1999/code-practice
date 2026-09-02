@@ -23,9 +23,10 @@ void PercolateDown(int p,KthLargest *H){
     H->heap[i] = last;
 }
  
-void PercolateUp(int x,KthLargest *H){
+void PercolateUp(int p,KthLargest *H){
     int i;
-    for(i=++H->size;H->heap[i/2] > x;i/=2){
+    int x = H->heap[p];
+    for(i=p;H->heap[i/2] > x;i/=2){
         H->heap[i] = H->heap[i/2];
     }
     H->heap[i] = x;
@@ -33,7 +34,8 @@ void PercolateUp(int x,KthLargest *H){
 
 int kthLargestAdd(KthLargest* obj, int val) {
     if(obj->size < obj->capacity){
-        PercolateUp(val,obj);
+        obj->heap[++obj->size] = val;
+        PercolateUp(obj->size,obj);
     }
     else{
         if(obj->heap[1] <= val){
@@ -50,18 +52,8 @@ KthLargest* kthLargestCreate(int k, int* nums, int numsSize) {
     H->capacity = k;
     H->heap = malloc(sizeof(int)*(k+1));
     H->heap[0] = -10000;
-    if(numsSize < k){
-        for(int i=1;i<=numsSize;i++){
-            PercolateUp(nums[i-1],H);
-        } 
-    }
-    else{
-        for(int i=1;i<=k;i++){
-            PercolateUp(nums[i-1],H);
-        }
-        for(int i=k;i<numsSize;i++){
-            kthLargestAdd(H,nums[i]);
-        } 
+    for(int i=1;i<=numsSize;i++){
+        kthLargestAdd(H,nums[i-1]);
     }
     return H;
 }
