@@ -18,8 +18,7 @@ struct ListNode* reverseBetween(struct ListNode* head, int left, int right) {
     for(int i=1;i<right;i++){
         r = r->next;
     }
-    if(r->next != NULL)afterr = r->next;
-    else afterr = NULL;
+    afterr = r->next;
     struct ListNode *pred,*curr,*succ;
     for(pred=afterr,curr=l;curr!=afterr;pred=curr,curr=succ){
         succ = curr->next;
