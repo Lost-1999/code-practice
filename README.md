@@ -33,6 +33,7 @@ leetcode练习
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Lost-1999/code-practice/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/Lost-1999/code-practice/tree/master/0021-merge-two-sorted-lists) |
+| [0092-reverse-linked-list-ii](https://github.com/Lost-1999/code-practice/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/Lost-1999/code-practice/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/Lost-1999/code-practice/tree/master/0206-reverse-linked-list) |
 | [0622-design-circular-queue](https://github.com/Lost-1999/code-practice/tree/master/0622-design-circular-queue) |
